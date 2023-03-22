@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+body{
+    background-color: #f4f4f4;
+    font-family: 'Oswald', sans-serif;
+}
+section{
+    width: 1200px;
+    margin: 0 auto;
+}
+#header{
+    padding: 50px;
+}
+#header div{
+    display: inline-block;
+}
+#header .contato{
+    float: right;
+    padding-top: 35px;
+}
+nav.menu{
+    background-color: #ffda1f;
+    text-align: center;
+}
+nav.menu ul li{
+    display: inline-block;
+    padding: 18px 90px;
+    font-size: 17px;
+}
+nav.menu ul li a{
+    color: #000;
+}
+a{
+    text-decoration: none;
+}
+.banner img{
+    width: 100%;
+}
+.marcas ul li {
+    display: inline-block;
+    font-size: 35px;
+    width: 16%;
+    padding: 50px;
+    color: darkred;
+    background-color: #ffda1f;
+    text-align: center;
+}
+.item{
+    display: inline-block;
+    font-size: 20px;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+.produtos {
+    display: flex;
+    justify-content: space-between;
+}
+li {
+    border-radius: 100px;
+}
+.produtos p {
+    justify-content: center;
+    display: flex;
+    line-height: 23px;
+    color: #474747;
+}
+.financiamento {
+    background-color: #ffda1f;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+.financiamento p {
+    font-size: 20px;
+    margin: 0;
+}
+.Butão {
+    margin-top: 17px;
+}
+.Butão a:hover {
+    background-color: darkgreen;
+    color: #ffda1f;
+    -webkit-text-stroke: 2px black;
+    border: 2px solid;
+    font-size: 70px;
+    transition-duration: 1.0s;
+    opacity: 0.7;
+}
+.Butão a {
+    color: #fff;
+    background: green;
+    padding: 10px 30px;
+    
+}
+.titulo{
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 25px;
+}
+.subtitulo{
+    font-size: 30px;
+    font-weight: bold;
+    color: #474747;
+    text-align: center;
+}
+.sublinhado{
+    width: 150px;
+    background: #ffda1f;
+    height: 10px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 25px;
+}
