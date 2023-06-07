@@ -150,7 +150,8 @@ footer .item {
     text-transform: uppercase;
 }
 
-.contato input, .contato textarea {
+.contato input,
+.contato textarea {
     border-bottom: 2px solid #fff;
     height: 35px;
     padding: 5px;
@@ -218,7 +219,7 @@ footer .menu li {
     text-transform: uppercase;
 }
 
-.faleconosco input, .faleconosco select{
+.faleconosco input, .faleconosco select, .faleconosco textarea {
     background: #d2d2d2;
     width: 250px;
     padding: 10px 2px;
@@ -228,7 +229,7 @@ input[type=radio] {
     float: left;
     margin: 5px 0;
 }
-.faleconosco ul li{
+.faleconosco ul li {
     display: inline-block;
     background-color: #d2d2d2;
     padding: 10px;
@@ -239,25 +240,126 @@ input[type=radio] {
 
 .faleconosco textarea{
     width: 500px;
-    background-color: #d2d2d2;
 }
+
 .sobre p{
     text-align: justify;
     width: 95%;
 }
-.gle img {
-    height: 239px;
-}
-.glb img{
-    height: 202px;
-}
-.clear {
+
+.clear{
     clear: both;
 }
-
+.dropdown{
+    display: none;
+}
 /*SCREEN 480PX */
-@media (max-width:480px){
-    .contato{
+@media (max-width: 1300px){
+    .dropdown{
+        display: block;
+        text-align: center;
+        background: #ffda1f;
+    }
+    .dropdown a{
+        color: #000;
+        line-height: 30px;
+    }
+    .dropdown img{
+        margin-top: 20px;
+    }
+    .dropdown i{
+        font-size: 35px;
+    }
+   #header{
         display: none!important;
+    }
+    .none,nav.menu,#logotipo{
+        display: none;
+    }
+  
+    section{
+        width: 100%;
+    }
+    
+    #header{
+        padding: 20px;
+    }
+    .dropdown-content{
+        display: none;
+    }
+    .dropdown:hover .dropdown-content{
+        display: block;
+    }
+    .marcas ul li {
+        width: 25%;
+    }
+    .item { 
+        width: 97%;
+    }
+    .botao a {
+        font-size: 14px;
+    }
+    .depoimentos .item { 
+        width: 60%;
+        max-width: 280px;
+    }
+}
+@media (max-width: 767px) and (min-width:481px){
+    .marcas ul li {
+        width: 30%;
+        text-align: center;
+    } 
+    .item {
+        width: 100%;
+        padding: 0;
+    }
+    footer .item {
+        width: 60%;
+    }
+    section {
+        width: calc(100% - 100px);
+    } 
+    header section {
+        width: 100%;
+    }
+    .faleconosco.div-50 {
+        width: 100%;
+    }
+    iframe{
+        width: 100%;
+    }
+    .faleconosco textarea{
+        width: 100%;
+        max-width: 500px;
+    }
+    .faleconosco {
+        text-align: center;
+    }
+    .marcas{
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px){
+    .content {
+        width: calc(100% - 40px);
+        padding: 10px 0;
+    }
+    .sobre h3{
+        text-align: center;
+    }
+    .div-50{
+        width: 100%;
+    }
+    iframe{
+        width: 100%;
+
+    }
+    .faleconosco textarea{
+        width: 100%;
+        max-width: 500px;
+    }
+    .faleconosco {
+        text-align: center;
     }
 }
